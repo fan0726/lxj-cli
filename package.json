@@ -1,6 +1,6 @@
 {
   "name": "song",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "song —— 一个可调用第三方接口的命令行工具",
   "bin": {
     "song": "bin/song.js"
