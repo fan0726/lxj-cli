@@ -26,9 +26,12 @@ chmod +x "$tmp"
 
 target="$INSTALL_DIR/song"
 echo "==> 安装到 $target ..."
-if [ -w "$INSTALL_DIR" ]; then
+# 确保目标目录存在且可写；不行就用 sudo 创建并写入
+if mkdir -p "$INSTALL_DIR" 2>/dev/null && [ -w "$INSTALL_DIR" ]; then
   mv "$tmp" "$target"
 else
+  echo "==> 需要管理员权限写入 $INSTALL_DIR"
+  sudo mkdir -p "$INSTALL_DIR"
   sudo mv "$tmp" "$target"
 fi
 
