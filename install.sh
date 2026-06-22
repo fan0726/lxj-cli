@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 # song CLI 一键安装脚本（Node 脚本版，需目标机器已安装 Node.js）。
 # 用法(在目标机器上)：
-#   curl -fsSL https://github.com/fan0726/song/releases/latest/download/install.sh | bash
+#   curl -fsSL https://github.com/fan0726/lxj-cli/releases/latest/download/install.sh | bash
 # 可选环境变量：
 #   SONG_BASE_URL    song 脚本所在目录的 URL，默认指向 GitHub 最新 Release
 #   SONG_INSTALL_DIR 安装目录，默认 /usr/local/bin
 set -euo pipefail
 
-BASE_URL="${SONG_BASE_URL:-https://github.com/fan0726/song/releases/latest/download}"
+BASE_URL="${SONG_BASE_URL:-https://github.com/fan0726/lxj-cli/releases/latest/download}"
 INSTALL_DIR="${SONG_INSTALL_DIR:-/usr/local/bin}"
 
 # song 是 Node 脚本，运行需要 node

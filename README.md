@@ -61,7 +61,7 @@ gh release upload v1.0.0 dist/song install.sh --clobber   # 覆盖到已有 Rele
 **方式一：一键安装脚本（推荐，会先检测 Node）**
 
 ```bash
-curl -fsSL https://github.com/fan0726/song/releases/latest/download/install.sh | bash
+curl -fsSL https://github.com/fan0726/lxj-cli/releases/latest/download/install.sh | bash
 song -v
 song wtr
 ```
@@ -69,7 +69,7 @@ song wtr
 **方式二：直接 curl 下载脚本**
 
 ```bash
-curl -fsSL https://github.com/fan0726/song/releases/latest/download/song -o /usr/local/bin/song
+curl -fsSL https://github.com/fan0726/lxj-cli/releases/latest/download/song -o /usr/local/bin/song
 chmod +x /usr/local/bin/song
 
 song -v
@@ -79,7 +79,7 @@ song wtr 北京
 **方式三：用 gh CLI**
 
 ```bash
-gh release download -R fan0726/song -p song
+gh release download -R fan0726/lxj-cli -p song
 ```
 
 ## 如何新增指令
